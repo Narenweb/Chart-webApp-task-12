@@ -20,7 +20,7 @@
                 @include flexBox(flex-start, center);
 
                 .active-dot {
-                    @include dot($light-color-2);
+                    @include dot($green-color);
                     display: inline-block;
 
                 }
