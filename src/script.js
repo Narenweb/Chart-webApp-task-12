@@ -1,6 +1,4 @@
 import './sass/main.scss';
-// import Chart from 'chart.js';
-// Your data object
 const data = {
     labels: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Sat', 'Sun'],
     datasets: [{
@@ -26,7 +24,7 @@ const config = {
         },
         animation: {
             easing: 'linear',
-            duration: 2000 // Duration of the animation in milliseconds
+            duration: 2000
         },
         interaction: {
             intersect: false,
@@ -235,10 +233,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
     function handleInput() {
-        // Enable the send button if there's text in the input box, otherwise disable it
-        // sendButton.disabled = inputBox.value.trim() === '';
-        // sendButton.style.opacity = inputBox.value.trim() === '' ? "0.5" : "1";
-
         // Show or hide the typing indicator and dots based on input
         if (inputBox.value.trim() === '') {
             typerName.style.display = "none";
@@ -257,9 +251,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             addMessage(messageText);
             inputBox.value = '';
-            // Scroll to the bottom to show the new message
             msgWrapper.scrollTop = msgWrapper.scrollHeight;
-            // sendButton.style.opacity = 0.5;
             typerName.style.display = "none";
             dotsContainer.style.display = 'none';
         }
@@ -272,8 +264,7 @@ document.addEventListener('DOMContentLoaded', function () {
         messageElement.setAttribute('data-time', getCurrentTime());
     
         msgWrapper.appendChild(messageElement);
-    
-        // If the container is overflowing, scroll the container to the bottom
+
         if (msgWrapper.scrollHeight > msgWrapper.clientHeight) {
             msgWrapper.scrollTop = msgWrapper.scrollHeight;
         }
@@ -288,11 +279,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const pageWrapper = document.querySelector('#pageWrapper');
     
     svgIcon.addEventListener('click', () => {
-        pageWrapper.classList.toggle('dark-theme'); // Toggle the CSS class name
+        pageWrapper.classList.toggle('dark-theme');
     });
-
-    
-
     
 });
 

@@ -3,16 +3,15 @@
     position: absolute;
     width: 100%;
     z-index: 1;
-    background-color: #fff;
+    background-color: $light-color;
 
     &::before {
         content: '';
-        border-bottom: solid 0.1px#e3e5e9;
+        border-bottom: solid 0.1px $light-color-2;
         position: absolute;
         top: 80px;
         width: 100vw;
         left: -10px;
-        //   z-index: 2;
     }
 
     .logo {
@@ -36,7 +35,7 @@
             position: absolute;
             left: 100px;
             top: -8px;
-            border: solid 0.1px #e3e5e9;
+            border: solid 0.1px $light-color-2;
 
         }
 
@@ -56,7 +55,7 @@
                 opacity: 0.8;
                 font-weight: 500;
                 text-align: center;
-                color: #4d8cf4;
+                color: $light-blue;
 
                 &:not(:last-child) {
                     margin-right: 40px;
@@ -68,7 +67,7 @@
                     width: 0%;
                     height: 2px;
                     margin: 0 auto;
-                    background-color: #4d8cf4;
+                    background-color: $light-blue;
                     transition: 0.4s ease-in;
                 }
 
@@ -106,7 +105,6 @@
                     margin: 0 20px 0 0;
                     opacity: 0.8;
                     border-radius: 5px;
-                    border: solid 1px #dadde8;
                     &::placeholder {
                         color: #65676e;
                         opacity: 0.5;
@@ -127,9 +125,6 @@
 
 }
 
-/* Add your existing styles here */
-
-/* Dark theme styles */
 .dark-theme {
     .navbar {
         background-color: #121212;
@@ -138,7 +133,7 @@
             .nav-list {
 
                 li {
-                    color: #fff
+                    color: $light-color;
                 }
             }
         }

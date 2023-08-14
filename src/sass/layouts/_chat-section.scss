@@ -1,7 +1,7 @@
 .chat-section {
     @include flexBox(space-around, flex-start);
     width: 100vw;
-    background-color: #f5f6fa;
+    background-color: $grey-color-2;
     overflow: auto;
     padding: 100px 0 20px;
 
@@ -20,7 +20,7 @@
                 @include flexBox(flex-start, center);
 
                 .active-dot {
-                    @include dot(#00e100);
+                    @include dot($light-color-2);
                     display: inline-block;
 
                 }
@@ -232,7 +232,7 @@
                 margin: 0 0 0 15px;
                 border-radius: 50%;
                 padding: 16.4px 14.2px 16.6px 16.8px;
-                background-color: #4d8cf4;
+                background-color: $light-blue;
                 position: relative;
                 cursor: pointer;
                 opacity: 0.5;
@@ -249,7 +249,7 @@
 
         .activity-text {
             margin-right: 20px;
-            background-color: #f5f6fa;
+            background-color: $grey-color-2;
             display: inline;
             cursor: pointer;
         }
@@ -292,7 +292,7 @@
                 }
 
                 .active-dot {
-                    @include dot(#4d8cf4);
+                    @include dot($light-blue);
                     position: absolute;
                     left: 70px;
                     cursor: pointer;
@@ -366,7 +366,7 @@
             padding: 20px 0;
             margin: 20px 0 40px;
             border-radius: 3px;
-            border: dashed 1px #dadde8;
+            border: dashed 1px $light-grey-color;
             cursor: pointer;
 
             .add-icon {
@@ -421,8 +421,6 @@
 .dark-theme {
     .chat-section {
         background-color: $dark-color;
-
-        // color: $light-color;
         .message-section {
             .conversation {
                 opacity: 1;

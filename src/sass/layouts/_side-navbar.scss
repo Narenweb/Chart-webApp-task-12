@@ -30,7 +30,7 @@
             .user-active {
                 height: 30px;
                 .active-dot {
-                    @include dot(#00e100);
+                    @include dot($green-color);
                     bottom: 32px;
                     left: 23px;
                 }

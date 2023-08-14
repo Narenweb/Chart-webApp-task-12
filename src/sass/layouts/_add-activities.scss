@@ -16,7 +16,7 @@
 
         label {
             margin-bottom: 10px;
-            color: grey;
+            color: $grey-color;
         }
 
         input {
@@ -72,8 +72,8 @@
             text-align: center;
             width: auto;
             overflow: auto;
-            background-color: grey;
-            color: #fff;
+            background-color: $grey-color;
+            color: $light-color;
             display: none;
             border-radius: 5px;
   
@@ -85,7 +85,7 @@
                 list-style: none;
                 padding: 3px 0;
                 cursor: pointer;
-                border-bottom: 1px solid #fff;
+                border-bottom: 1px solid $light-color;
                 width: 100%;
 
                 &:hover {
