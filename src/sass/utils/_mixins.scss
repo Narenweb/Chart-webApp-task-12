@@ -1,0 +1,28 @@
+@mixin dot($bg-color) {
+    width: 10px;
+    height: 10px;
+    border: solid 2px $light-color;
+    background-color: $bg-color;
+    border-radius: 50%;
+    position: relative;
+}
+
+@mixin flexBox($content,$alignItem){
+    display: flex;
+    justify-content: $content;
+    align-items: $alignItem;
+}
+
+@mixin button(){
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transform: translateX(-50%);
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color:$light-blue;
+    color: $light-color;
+    transition: 0.2s ease;
+    position: absolute;
+    bottom: 20px;
+}

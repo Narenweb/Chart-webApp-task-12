@@ -1,0 +1,107 @@
+.add-activities {
+    width: 250px;
+    height: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 30px;
+    display: none;
+    form {
+        @include flexBox(flex-start,flex-start);
+        flex-direction: column;
+
+        label {
+            margin-bottom: 10px;
+            color: grey;
+        }
+
+        input {
+            outline: none;
+            border: 1px solid $light-grey-color;
+            border-radius: 5px;
+            &::placeholder{
+                color: rgb(73, 65, 65);
+            }
+        }
+
+        .name {
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+
+        .dropdown {
+            text-align: center;
+
+            .input-wrap {
+                position: relative;
+                .inp {
+                    padding: 10px 14px;
+                    cursor: pointer;
+                    caret-color: transparent;
+                }
+
+                .shape-v {
+                    border-right: 1px solid $dark-color;
+                    border-bottom: 1px solid $dark-color;
+                    transform: rotate(45deg);
+                    width: 10px;
+                    position: absolute;
+                    top: 12px;
+                    right:10px;
+                    height: 10px;
+                    cursor: pointer;
+
+                    &.shape-active{
+                        transform: rotate(-135deg);
+                        transition: 0.4s ease;
+                        position: absolute;
+                        top:17px;
+                        
+
+                    }
+                }
+            }
+
+        }
+
+        .option {
+            text-align: center;
+            width: auto;
+            overflow: auto;
+            background-color: grey;
+            color: #fff;
+            display: none;
+            border-radius: 5px;
+  
+            &.active {
+                display: block;
+            }
+
+            li {
+                list-style: none;
+                padding: 3px 0;
+                cursor: pointer;
+                border-bottom: 1px solid #fff;
+                width: 100%;
+
+                &:hover {
+                    background-color:$light-blue;
+                }
+            }
+        }
+
+    }
+}
+
+.dark-theme{
+  .add-activities{
+        background-color: $dark-color;
+        label{
+            color: $light-color;
+        }
+  }
+}

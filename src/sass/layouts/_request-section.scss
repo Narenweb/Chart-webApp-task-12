@@ -1,0 +1,240 @@
+.chat-section {
+    .request-section {
+        padding-top: 5px;
+        width: 27%;
+
+        .chart {
+            margin-bottom: 10px;
+
+            .start-chart {
+                @include flexBox(flex-start, center);
+                position: relative;
+                width: 95%;
+
+                .active-dot {
+                    @include dot($light-blue);
+                    margin-right: 10px;
+                }
+
+                .request-text {
+                    opacity: 0.8;
+                    margin-bottom: 10px;
+                }
+
+                .dropdown {
+                    position: absolute;
+                    right: 0;
+                    top: 2px;
+                    border: none;
+                    background-color: transparent;
+                    outline: none;
+                    color: #a6a6a6;
+                    font-weight: 500;
+                    font-style: normal;
+                    cursor: pointer;
+
+                }
+            }
+
+            .graph {
+                height: 200px;
+                width: 300px;
+            }
+        }
+
+        .possibility {
+            width: 100%;
+            height: 150px;
+
+            object-fit: contain;
+            border-radius: 3px;
+            box-shadow: 0 15px 55px 0 rgba(124, 135, 168, 0.06), 0 5px 45px 0 rgba(46, 104, 208, 0.1);
+            background-image: linear-gradient(252deg, #60d9f7 102%, #4288b4 59%, #52a0f5 35%, #4d8cf4 8%);
+            margin-bottom: 20px;
+            position: relative;
+
+            .right-oval {
+                position: absolute;
+                top: -65px;
+                right: 0px;
+                width: 130px;
+            }
+
+            .separater {
+                .growth {
+                    padding-top: 10px;
+                    position: relative;
+                    @include flexBox(flex-start, flex-start);
+                    padding: 0 0 0 30px;
+
+                    .shape-1 {
+                        position: absolute;
+                        left: -30px;
+                        top: -20px;
+                        object-fit: contain;
+
+                    }
+
+                    .hired-text {
+                        width: 300px;
+                        margin-top: 10px;
+                        margin-left: 30px;
+                        font-weight: bold;
+                        line-height: 1.14;
+                        letter-spacing: normal;
+                        color: $light-color;
+
+                    }
+
+                    .percent {
+                        font-size: 36px;
+                        font-weight: normal;
+                        line-height: 1;
+                        text-align: center;
+                        color: $light-color;
+                        margin: 10px 0;
+                    }
+
+                    .shape-2 {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+
+                .line {
+                    width: 85%;
+                    opacity: 0.6;
+                    border: solid 0.5px $light-color;
+                    margin-bottom: 15px;
+                    position: relative;
+                    left: 20px;
+                }
+
+                .upgrade {
+                    @include flexBox(space-around, center);
+                    position: relative;
+                    width: 90%;
+                    padding-left: 10px;
+                    .icon-collage {
+                        position: relative;
+                        right: 15px;
+
+                        img {
+                            width: 30px;
+                            height: 30px;
+                            object-fit: contain;
+                            box-shadow: 0 5px 20px 0 rgba(46, 104, 208, 0.1);
+
+                            &:nth-child(2) {
+                                position: absolute;
+                                left: 30px;
+                            }
+
+                            &:last-child {
+                                position: absolute;
+                                left: 60px;
+                            }
+                        }
+                    }
+
+                    .others {
+                        color: $light-color;
+                        position: relative;
+                        left: 28px;
+                    }
+                }
+            }
+
+        }
+
+        .rectangle-parent {
+
+            // overflow: hidden;
+            .rectangle-wrapper {
+                // overflow: auto;
+                max-height: 200px;
+
+                &::-webkit-scrollbar {
+                    width: 0;
+                }
+
+                .rectangle-card {
+                    width: 100%;
+                    height: 120px;
+                    padding: 30px 30px;
+                    border-radius: 3px;
+                    box-shadow: 0 5px 45px 0 rgba(46, 104, 208, 0.1);
+                    background-color: $light-color;
+                    margin-bottom: 20px;
+
+                    .first-line {
+                        @include flexBox(space-between, center);
+                        margin-bottom: 20px;
+
+                        .user-text {
+                            opacity: 0.8;
+                            line-height: 1.14;
+                        }
+
+                        .dots {
+                            @include flexBox(space-evenly, flex-start);
+                            width: 40px;
+                            cursor: pointer;
+
+                            .dot {
+                                width: 4px;
+                                height: 4px;
+                                border-radius: 50%;
+                                background-color: $light-grey-color;
+                            }
+                        }
+
+                    }
+
+                    .second-line {
+                        @include flexBox(flex-start, center);
+
+                        .number {
+                            font-weight: bold;
+                            line-height: 1.17;
+                            color: $light-blue;
+                        }
+
+                        &-text {
+                            color: #a6a6a6;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        .second-line {
+                            .number {
+                                color: #ff6d4a;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+    }
+}
+
+.dark-theme {
+    .chart {
+        canvas {
+            background-color: $light-color;
+            border-radius: 5px;
+        }
+
+        .start-chart {
+            .request-text {
+                opacity: 0.8;
+                color: $light-color;
+            }
+        }
+    }
+
+}

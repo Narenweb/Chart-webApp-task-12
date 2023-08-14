@@ -1,0 +1,17 @@
+// Base imports
+@import '../base/reset';
+@import '../base/typography';
+
+// Utils imports
+@import '../utils/mixins';
+@import '../utils/variable';
+
+//Components imports
+@import '../components/button';
+
+//Layouts imports
+@import '../layouts/header';
+@import '../layouts/side-navbar';
+@import '../layouts/chat-section';
+@import '../layouts/request-section';
+@import '../layouts/add-activities';
