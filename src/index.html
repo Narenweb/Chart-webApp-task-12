@@ -11,146 +11,150 @@
 
 <body>
     <div id="pageWrapper">
-       
-    <header class="navbar">
-        <a href="javascript:void(0);" class="logo">
-            <img src="./Assets/chart@3x.png" alt="logo">
-        </a>
-        <div class="nav-list-container">
-            <ul class="nav-list">
-                <li class="font-md">Requests</li>
-                <li class="font-md">Reviews</li>
-                <li class="font-md">Credit</li>
-                <li class="font-md">Help</li>
-            </ul>
-            <div class="search-profile">
-                <div class="search-container">
-                    <svg version="1.0" class="search-icon" xmlns="http://www.w3.org/2000/svg" width="128.000000pt"
-                        height="128.000000pt" viewBox="0 0 128.000000 128.000000" preserveAspectRatio="xMidYMid meet">
-                        <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)" fill="#65676e"
-                            stroke="none">
-                            <path d="M390 1264 c-191 -50 -326 -187 -375 -379 -28 -111 -12 -231 45 -345
+
+        <header class="navbar">
+            <a href="javascript:void(0);" class="logo">
+                <img src="./Assets/chart@3x.png" alt="logo">
+            </a>
+            <div class="nav-list-container">
+                <ul class="nav-list">
+                    <li class="font-md request-route">Requests</li>
+                    <li class="font-md reviews-route">Reviews</li>
+                    <li class="font-md credit-route">Credit</li>
+                    <li class="font-md help-route">Help</li>
+                </ul>
+                <div class="search-profile">
+                    <div class="search-container">
+                        <svg version="1.0" class="search-icon" xmlns="http://www.w3.org/2000/svg" width="128.000000pt"
+                            height="128.000000pt" viewBox="0 0 128.000000 128.000000"
+                            preserveAspectRatio="xMidYMid meet">
+                            <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)" fill="#65676e"
+                                stroke="none">
+                                <path d="M390 1264 c-191 -50 -326 -187 -375 -379 -28 -111 -12 -231 45 -345
                 36 -71 125 -164 196 -204 158 -90 364 -87 514 8 l55 35 191 -189 c122 -122
                 197 -190 211 -190 24 0 53 30 53 55 0 11 -80 99 -190 209 l-189 191 35 55 c95
                 150 98 356 8 514 -107 189 -350 294 -554 240z m283 -131 c121 -58 206 -169
                 225 -298 41 -266 -187 -494 -453 -453 -129 19 -240 104 -298 225 -29 62 -32
                 76 -32 168 0 91 3 106 31 165 34 73 105 150 168 182 73 38 118 48 206 45 72
                 -2 95 -7 153 -34z"></path>
+                            </g>
+                        </svg>
+                        <input type="text" class="search-input" placeholder="Search">
+                    </div>
+                    <img src="./Assets/man.png" alt="profile" class="profile">
+                </div>
+            </div>
+        </header>
+        <section class="main-section">
+            <section class="side-navbar">
+                <div class="user-container">
+                    <div class="user-active">
+                        <img src="./Assets/oval-1.png" alt="img">
+                        <div class="active-dot"></div>
+                    </div>
+                    <div class="user-active">
+                        <img src="./Assets/oval-4.png" alt="img">
+                        <div class="active-dot"></div>
+                    </div>
+                    <img src="./Assets/oval-7.png" alt="img">
+                    <img src="./Assets/oval-6.png" alt="img">
+                    <div class="user-active">
+                        <img src="./Assets/oval-2.png" alt="img">
+                        <div class="active-dot"></div>
+                    </div>
+                    <img src="./Assets/oval-5.png" alt="img">
+                    <img src="./Assets/oval-3.png" alt="img">
+                </div>
+                <div class="notification">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+                        <g fill="none" fill-rule="evenodd">
+                            <path stroke="#4D8CF4" stroke-width="2"
+                                d="M17.6 7.8a1.933 1.933 0 1 0 0-3.867 1.933 1.933 0 0 0 0 3.867zm0 .533a2.467 2.467 0 1 1 0-4.933 2.467 2.467 0 0 1 0 4.933z" />
+                            <path stroke="#DADDE8" stroke-width="2"
+                                d="M8.067 7.8a3.4 3.4 0 1 0 0-6.8 3.4 3.4 0 0 0 0 6.8zm0 .533a3.933 3.933 0 1 1 0-7.866 3.933 3.933 0 0 1 0 7.866z" />
+                            <path fill="#4D8CF4" fill-rule="nonzero"
+                                d="M14.591 12.79a.733.733 0 1 1-1.316-.647c.846-1.721 2.323-2.61 4.316-2.61 1.99 0 3.472.887 4.332 2.606a.733.733 0 0 1-1.312.656C20.003 11.58 19.034 11 17.59 11c-1.442 0-2.404.578-3 1.79z" />
+                            <path fill="#DADDE8" fill-rule="nonzero"
+                                d="M1.45 17.025a.733.733 0 0 1-1.433-.317c1.047-4.72 3.767-7.175 8.03-7.175s6.995 2.453 8.068 7.171a.733.733 0 0 1-1.43.325C13.757 12.947 11.588 11 8.048 11c-3.538 0-5.694 1.945-6.599 6.025z" />
                         </g>
                     </svg>
-                    <input type="text" class="search-input" placeholder="Search">
-                </div>
-                <img src="./Assets/man.png" alt="profile" class="profile">
-            </div>
-        </div>
-    </header>
-    <section class="main-section">
-        <section class="side-navbar">
-            <div class="user-container">
-                <div class="user-active">
-                    <img src="./Assets/oval-1.png" alt="img">
-                    <div class="active-dot"></div>
-                </div>
-                <div class="user-active">
-                    <img src="./Assets/oval-4.png" alt="img">
-                    <div class="active-dot"></div>
-                </div>
-                <img src="./Assets/oval-7.png" alt="img">
-                <img src="./Assets/oval-6.png" alt="img">
-                <div class="user-active">
-                    <img src="./Assets/oval-2.png" alt="img">
-                    <div class="active-dot"></div>
-                </div>
-                <img src="./Assets/oval-5.png" alt="img">
-                <img src="./Assets/oval-3.png" alt="img">
-            </div>
-            <div class="notification">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
-                    <g fill="none" fill-rule="evenodd">
-                        <path stroke="#4D8CF4" stroke-width="2"
-                            d="M17.6 7.8a1.933 1.933 0 1 0 0-3.867 1.933 1.933 0 0 0 0 3.867zm0 .533a2.467 2.467 0 1 1 0-4.933 2.467 2.467 0 0 1 0 4.933z" />
-                        <path stroke="#DADDE8" stroke-width="2"
-                            d="M8.067 7.8a3.4 3.4 0 1 0 0-6.8 3.4 3.4 0 0 0 0 6.8zm0 .533a3.933 3.933 0 1 1 0-7.866 3.933 3.933 0 0 1 0 7.866z" />
-                        <path fill="#4D8CF4" fill-rule="nonzero"
-                            d="M14.591 12.79a.733.733 0 1 1-1.316-.647c.846-1.721 2.323-2.61 4.316-2.61 1.99 0 3.472.887 4.332 2.606a.733.733 0 0 1-1.312.656C20.003 11.58 19.034 11 17.59 11c-1.442 0-2.404.578-3 1.79z" />
-                        <path fill="#DADDE8" fill-rule="nonzero"
-                            d="M1.45 17.025a.733.733 0 0 1-1.433-.317c1.047-4.72 3.767-7.175 8.03-7.175s6.995 2.453 8.068 7.171a.733.733 0 0 1-1.43.325C13.757 12.947 11.588 11 8.048 11c-3.538 0-5.694 1.945-6.599 6.025z" />
-                    </g>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
-                    <g fill="none" fill-rule="evenodd">
-                        <path fill="#DADDE8" fill-rule="nonzero"
-                            d="M2.667 6a.833.833 0 0 0-.834.833v12.5c0 .46.373.834.834.834h16.666c.46 0 .834-.373.834-.834v-12.5A.833.833 0 0 0 19.333 6H2.667zM11 4.333h8.333a2.5 2.5 0 0 1 2.5 2.5v2.5a.833.833 0 1 1-1.666 0v-2.5A.833.833 0 0 0 19.333 6H2.667a.833.833 0 0 0-.834.833V8.5h15.834a.833.833 0 1 1 0 1.667H.167V6.833a2.5 2.5 0 0 1 2.5-2.5h16.666a2.5 2.5 0 0 1 2.5 2.5v12.5a2.5 2.5 0 0 1-2.5 2.5H2.667a2.5 2.5 0 0 1-2.5-2.5v-12.5a2.5 2.5 0 0 1 2.5-2.5H11z" />
-                        <circle cx="4.75" cy="13.083" r="1.25" fill="#4D8CF4" />
-                        <circle cx="8.917" cy="13.083" r="1.25" fill="#4D8CF4" />
-                        <circle cx="4.75" cy="17.25" r="1.25" fill="#4D8CF4" />
-                        <circle cx="8.917" cy="17.25" r="1.25" fill="#4D8CF4" />
-                        <circle cx="13.083" cy="13.083" r="1.25" fill="#4D8CF4" />
-                        <circle cx="13.083" cy="17.25" r="1.25" fill="#4D8CF4" />
-                        <circle cx="17.25" cy="17.25" r="1.25" fill="#4D8CF4" />
-                        <rect width="1.667" height="3.333" x="4.333" y=".167" fill="#4D8CF4" rx=".833" />
-                        <rect width="1.667" height="3.333" x="16" y=".167" fill="#4D8CF4" rx=".833" />
-                        <path fill="#4D8CF4"
-                            d="M16.833 12.322l1.079-1.077a.833.833 0 0 1 1.178 1.179l-1.612 1.608a.833.833 0 0 1-1.233.06l-.834-.836a.833.833 0 1 1 1.178-1.179l.244.245z" />
-                    </g>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
-                    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
-                        <path stroke="#4D8CF4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                            d="M12 17a3.001 3.001 0 0 1-6 0" />
-                        <path stroke="#DADDE8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                            d="M3 5.818C3 2.605 5.687 0 9 0s6 2.605 6 5.818v4.364l2.905 4.95c.246.477-.003.868-.553.868H.648c-.55 0-.8-.391-.553-.868L3 10.182V5.818z" />
-                        <circle cx="14.8" cy="5" r="5" fill="#FF7052" stroke="#FFF" stroke-width="2" />
-                    </g>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" id="themeToggleSvg">
-                    <g fill="none" fill-rule="nonzero">
-                        <path fill="#DADDE8"
-                            d="M8.419 4.59l-.29.126c-.506.22-.984.498-1.427.825l-.256.19-2.292-.421a.733.733 0 0 0-.768.354l-1.165 2.02a.733.733 0 0 0 .076.84l1.51 1.779-.035.315a7.421 7.421 0 0 0 .001 1.655l.036.318-1.54 1.787a.733.733 0 0 0-.079.845l1.16 2.008c.155.27.464.411.77.354l2.322-.439.258.191c.443.328.922.606 1.428.827l.29.127.785 2.196c.104.292.38.486.69.486h2.335c.31 0 .586-.194.69-.486l.788-2.198.29-.127c.502-.22.978-.495 1.419-.82l.255-.19 2.296.42a.733.733 0 0 0 .767-.355l1.167-2.022a.733.733 0 0 0-.076-.84l-1.51-1.783.034-.314a7.422 7.422 0 0 0 .015-1.493l-.029-.31 1.859-2.152a.733.733 0 0 0 .08-.846L19.115 5.45a.733.733 0 0 0-.772-.353l-2.798.531-.254-.18a7.321 7.321 0 0 0-1.303-.735l-.292-.127-.78-2.193a.733.733 0 0 0-.69-.487H9.893a.733.733 0 0 0-.691.486L8.419 4.59zM7.822 1.9A2.2 2.2 0 0 1 9.894.44h2.331a2.2 2.2 0 0 1 2.073 1.462l.57 1.602c.348.168.685.358 1.008.57l2.193-.417a2.2 2.2 0 0 1 2.316 1.061l1.158 2.006a2.2 2.2 0 0 1-.24 2.538l-1.457 1.686a8.929 8.929 0 0 1-.01 1.151l1.107 1.307a2.2 2.2 0 0 1 .227 2.523l-1.167 2.021a2.2 2.2 0 0 1-2.3 1.064l-1.68-.306c-.365.25-.748.472-1.147.664l-.577 1.61a2.2 2.2 0 0 1-2.071 1.458H9.894a2.2 2.2 0 0 1-2.072-1.46l-.574-1.606a8.791 8.791 0 0 1-1.155-.67l-1.7.322a2.2 2.2 0 0 1-2.314-1.062l-1.16-2.008a2.2 2.2 0 0 1 .24-2.536l1.126-1.307a8.913 8.913 0 0 1 0-1.337L1.179 9.474A2.2 2.2 0 0 1 .951 6.95l1.165-2.02A2.2 2.2 0 0 1 4.42 3.868l1.674.308a8.791 8.791 0 0 1 1.155-.669L7.822 1.9z" />
-                        <path fill="#4D8CF4"
-                            d="M11.06 15.107a3.667 3.667 0 1 1 0-7.334 3.667 3.667 0 0 1 0 7.334zm0-1.467a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4z" />
-                    </g>
-                </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                        <g fill="none" fill-rule="evenodd">
+                            <path fill="#DADDE8" fill-rule="nonzero"
+                                d="M2.667 6a.833.833 0 0 0-.834.833v12.5c0 .46.373.834.834.834h16.666c.46 0 .834-.373.834-.834v-12.5A.833.833 0 0 0 19.333 6H2.667zM11 4.333h8.333a2.5 2.5 0 0 1 2.5 2.5v2.5a.833.833 0 1 1-1.666 0v-2.5A.833.833 0 0 0 19.333 6H2.667a.833.833 0 0 0-.834.833V8.5h15.834a.833.833 0 1 1 0 1.667H.167V6.833a2.5 2.5 0 0 1 2.5-2.5h16.666a2.5 2.5 0 0 1 2.5 2.5v12.5a2.5 2.5 0 0 1-2.5 2.5H2.667a2.5 2.5 0 0 1-2.5-2.5v-12.5a2.5 2.5 0 0 1 2.5-2.5H11z" />
+                            <circle cx="4.75" cy="13.083" r="1.25" fill="#4D8CF4" />
+                            <circle cx="8.917" cy="13.083" r="1.25" fill="#4D8CF4" />
+                            <circle cx="4.75" cy="17.25" r="1.25" fill="#4D8CF4" />
+                            <circle cx="8.917" cy="17.25" r="1.25" fill="#4D8CF4" />
+                            <circle cx="13.083" cy="13.083" r="1.25" fill="#4D8CF4" />
+                            <circle cx="13.083" cy="17.25" r="1.25" fill="#4D8CF4" />
+                            <circle cx="17.25" cy="17.25" r="1.25" fill="#4D8CF4" />
+                            <rect width="1.667" height="3.333" x="4.333" y=".167" fill="#4D8CF4" rx=".833" />
+                            <rect width="1.667" height="3.333" x="16" y=".167" fill="#4D8CF4" rx=".833" />
+                            <path fill="#4D8CF4"
+                                d="M16.833 12.322l1.079-1.077a.833.833 0 0 1 1.178 1.179l-1.612 1.608a.833.833 0 0 1-1.233.06l-.834-.836a.833.833 0 1 1 1.178-1.179l.244.245z" />
+                        </g>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                        <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+                            <path stroke="#4D8CF4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M12 17a3.001 3.001 0 0 1-6 0" />
+                            <path stroke="#DADDE8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M3 5.818C3 2.605 5.687 0 9 0s6 2.605 6 5.818v4.364l2.905 4.95c.246.477-.003.868-.553.868H.648c-.55 0-.8-.391-.553-.868L3 10.182V5.818z" />
+                            <circle cx="14.8" cy="5" r="5" fill="#FF7052" stroke="#FFF" stroke-width="2" />
+                        </g>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23"
+                        id="themeToggleSvg">
+                        <g fill="none" fill-rule="nonzero">
+                            <path fill="#DADDE8"
+                                d="M8.419 4.59l-.29.126c-.506.22-.984.498-1.427.825l-.256.19-2.292-.421a.733.733 0 0 0-.768.354l-1.165 2.02a.733.733 0 0 0 .076.84l1.51 1.779-.035.315a7.421 7.421 0 0 0 .001 1.655l.036.318-1.54 1.787a.733.733 0 0 0-.079.845l1.16 2.008c.155.27.464.411.77.354l2.322-.439.258.191c.443.328.922.606 1.428.827l.29.127.785 2.196c.104.292.38.486.69.486h2.335c.31 0 .586-.194.69-.486l.788-2.198.29-.127c.502-.22.978-.495 1.419-.82l.255-.19 2.296.42a.733.733 0 0 0 .767-.355l1.167-2.022a.733.733 0 0 0-.076-.84l-1.51-1.783.034-.314a7.422 7.422 0 0 0 .015-1.493l-.029-.31 1.859-2.152a.733.733 0 0 0 .08-.846L19.115 5.45a.733.733 0 0 0-.772-.353l-2.798.531-.254-.18a7.321 7.321 0 0 0-1.303-.735l-.292-.127-.78-2.193a.733.733 0 0 0-.69-.487H9.893a.733.733 0 0 0-.691.486L8.419 4.59zM7.822 1.9A2.2 2.2 0 0 1 9.894.44h2.331a2.2 2.2 0 0 1 2.073 1.462l.57 1.602c.348.168.685.358 1.008.57l2.193-.417a2.2 2.2 0 0 1 2.316 1.061l1.158 2.006a2.2 2.2 0 0 1-.24 2.538l-1.457 1.686a8.929 8.929 0 0 1-.01 1.151l1.107 1.307a2.2 2.2 0 0 1 .227 2.523l-1.167 2.021a2.2 2.2 0 0 1-2.3 1.064l-1.68-.306c-.365.25-.748.472-1.147.664l-.577 1.61a2.2 2.2 0 0 1-2.071 1.458H9.894a2.2 2.2 0 0 1-2.072-1.46l-.574-1.606a8.791 8.791 0 0 1-1.155-.67l-1.7.322a2.2 2.2 0 0 1-2.314-1.062l-1.16-2.008a2.2 2.2 0 0 1 .24-2.536l1.126-1.307a8.913 8.913 0 0 1 0-1.337L1.179 9.474A2.2 2.2 0 0 1 .951 6.95l1.165-2.02A2.2 2.2 0 0 1 4.42 3.868l1.674.308a8.791 8.791 0 0 1 1.155-.669L7.822 1.9z" />
+                            <path fill="#4D8CF4"
+                                d="M11.06 15.107a3.667 3.667 0 1 1 0-7.334 3.667 3.667 0 0 1 0 7.334zm0-1.467a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4z" />
+                        </g>
+                    </svg>
 
 
-            </div>
-        </section>
-        <section class="chat-section">
-            <div class="message-section">
-                <div class="typing-section">
-                    <div class="typer-name">
-                        <div class="active-dot"></div>
-                        <h2 class="name font-md">Jack M.</h2>
-                        <span class="typing font-md">is typing</span>
-                        <div class="dots" id="dots">
+                </div>
+            </section>
+            <section class="chat-section">
+                <div class="message-section">
+                    <div class="typing-section">
+                        <div class="typer-name">
+                            <div class="active-dot"></div>
+                            <h2 class="name font-md">Jack M.</h2>
+                            <span class="typing font-md">is typing</span>
+                            <div class="dots" id="dots">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <div class="dots">
                             <div class="dot"></div>
                             <div class="dot"></div>
                             <div class="dot"></div>
                         </div>
                     </div>
-                    <div class="dots">
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                    </div>
-                </div>
-                <div class="conversation">
-                    <h1 class="day font-xs">Today</h1>
-                    <div class="msg-parent">
-                        <div class="msg-wrapper" id="msg-wrapper">
+                    <div class="conversation">
+                        <h1 class="day font-xs">Today</h1>
+                        <div class="msg-parent">
+                            <div class="msg-wrapper" id="msg-wrapper">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="typing-container">
-                    <form action="">
-                    <div class="chat-box">
-                        <div class="input-box">
-                            <input type="text" class="chat-box-input" id="message-input" placeholder="Message" required maxlength="60">
-                            <span class="emoj">😊</span>
-                            <svg version="1.1" class="attachment" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px"
-                                viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                                <path fill="#8e8e93" opacity="1.000000" stroke="none" d="
+                    <div class="typing-container">
+                        <form action="">
+                            <div class="chat-box">
+                                <div class="input-box">
+                                    <input type="text" class="chat-box-input" id="message-input" placeholder="Message"
+                                        required>
+                                    <span class="emoj">😊</span>
+                                    <svg version="1.1" class="attachment" id="Layer_1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" width="15px" viewBox="0 0 64 64"
+                                        enable-background="new 0 0 64 64" xml:space="preserve">
+                                        <path fill="#8e8e93" opacity="1.000000" stroke="none" d="
            M19.933107,29.924551 
                C21.765989,28.637777 23.770866,27.537218 25.401314,26.031275 
                C31.709866,20.204439 37.883480,14.231822 44.137814,8.345872 
@@ -180,12 +184,14 @@
                C16.717892,42.652500 16.188011,37.142300 18.078842,33.698490 
                C18.752722,32.471142 19.318167,31.184259 19.933107,29.924551 
            z" />
-                            </svg>
-                                  <div class="send-oval" id="send-button">
-                            <svg version="1.1" id="Layer_1" class="send-icon" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px"
-                                viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
-                                <path fill="#FFFFFF" opacity="1.000000" stroke="none" d="
+                                    </svg>
+                                    <div class="send-oval" id="send-button">
+                                        <svg version="1.1" id="Layer_1" class="send-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px"
+                                            viewBox="0 0 128 128" enable-background="new 0 0 128 128"
+                                            xml:space="preserve">
+                                            <path fill="#FFFFFF" opacity="1.000000" stroke="none" d="
 M129.000000,63.000000 
 	C129.000000,64.066673 129.000000,65.133339 128.689850,66.310287 
 	C127.112915,67.558563 126.015739,69.021637 124.553307,69.784721 
@@ -209,213 +215,44 @@ M129.000000,63.000000
 	C34.196827,13.736692 54.363834,23.748653 74.363373,34.084789 
 	C92.667763,43.544834 110.794807,53.348022 129.000000,63.000000 
 z" />
-                            </svg>
-                        </div>
-                        </div>
+                                        </svg>
+                                    </div>
+                                </div>
 
-                  
-                    </div>
-                    </form>
-                </div>
-                <p class="activity-text">Activity</p>
-                <p class="notes font-md">Notes</p>
-                <div class="activity-container" id="activityContainer">
-                    <div class="activity-box">
-                        <div class="dots-container">
-                            <div class="dots">
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                            </div>
-                            <div class="dots">
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                            </div>
-                            <div class="dots">
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                            </div>
-                        </div>
-                        <div class="active-dot"></div>
-                        <p class="active-name font-sm">Call Glenn M.</p>
-                        <div class="tag">
-                            <p class="activity blue">Call</p>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="89" height="91" viewBox="0 0 89 91"
-                            class="delete-icon">
-                            <defs>
-                                <filter id="a" width="122.3%" height="340%" x="-11.2%" y="-120%"
-                                    filterUnits="objectBoundingBox">
-                                    <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1" />
-                                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"
-                                        stdDeviation="22.5" />
-                                    <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
-                                        values="0 0 0 0 0.180392157 0 0 0 0 0.407843137 0 0 0 0 0.815686275 0 0 0 0.1 0" />
-                                    <feMerge>
-                                        <feMergeNode in="shadowMatrixOuter1" />
-                                        <feMergeNode in="SourceGraphic" />
-                                    </feMerge>
-                                </filter>
-                            </defs>
-                            <path fill="#A6A6A6" fill-rule="nonzero"
-                                d="M824 37.184c.28 0 .508.23.508.514v5.876a.51.51 0 0 1-.508.514.51.51 0 0 1-.508-.514v-5.876a.51.51 0 0 1 .508-.514zm1.78.491l-.254 5.877a.511.511 0 0 0 .508.536.51.51 0 0 0 .508-.491l.254-5.877a.511.511 0 0 0-.486-.535.51.51 0 0 0-.53.49zm-4.09-.49a.511.511 0 0 0-.486.535l.254 5.877a.51.51 0 0 0 .53.49.511.511 0 0 0 .486-.535l-.254-5.877a.51.51 0 0 0-.53-.49zm8.31-1.541a.51.51 0 0 1-.508.513h-.527l-.44 5.764a.51.51 0 0 1-.546.473.512.512 0 0 1-.468-.552l.434-5.685h-7.89l.613 8.029c.05.53.485.93 1.013.93h4.638c.53 0 .966-.395 1.013-.92a.51.51 0 0 1 .552-.464c.28.026.486.276.46.558a2.025 2.025 0 0 1-2.025 1.853h-4.638c-.509 0-.996-.19-1.372-.537a2.056 2.056 0 0 1-.654-1.337l-.62-8.112h-.527a.51.51 0 0 1-.508-.513.51.51 0 0 1 .508-.513h3.077v-.59c0-.85.684-1.541 1.525-1.541h1.78c.84 0 1.525.69 1.525 1.54v.59h3.077c.28 0 .508.23.508.514zm-7.398-.513h2.796v-.59a.512.512 0 0 0-.508-.514h-1.78c-.28 0-.508.23-.508.513v.59z"
-                                filter="url(#a)" transform="translate(-779 1)" />
-                        </svg>
 
+                            </div>
+                        </form>
                     </div>
-                    <div class="activity-box">
-                        <div class="dots-container">
-                            <div class="dots">
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
+                    <p class="activity-text">Activity</p>
+                    <p class="notes font-md">Notes</p>
+                    <div class="activity-container" id="activityContainer">
+                        <div class="activity-box">
+                            <div class="dots-container">
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
                             </div>
-                            <div class="dots">
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
+                            <div class="active-dot"></div>
+                            <p class="active-name font-sm">Call Glenn M.</p>
+                            <div class="tag">
+                                <p class="activity blue">Call</p>
                             </div>
-                            <div class="dots">
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                            </div>
-                        </div>
-                        <div class="active-dot-green"></div>
-                        <p class="active-name">Meet Glenn M.</p>
-                        <div class="tag">
-                            <p class="activity green">Appointment</p>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="89" height="91" viewBox="0 0 89 91"
-                            class="delete-icon">
-                            <defs>
-                                <filter id="a" width="122.3%" height="340%" x="-11.2%" y="-120%"
-                                    filterUnits="objectBoundingBox">
-                                    <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1" />
-                                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"
-                                        stdDeviation="22.5" />
-                                    <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
-                                        values="0 0 0 0 0.180392157 0 0 0 0 0.407843137 0 0 0 0 0.815686275 0 0 0 0.1 0" />
-                                    <feMerge>
-                                        <feMergeNode in="shadowMatrixOuter1" />
-                                        <feMergeNode in="SourceGraphic" />
-                                    </feMerge>
-                                </filter>
-                            </defs>
-                            <path fill="#A6A6A6" fill-rule="nonzero"
-                                d="M824 37.184c.28 0 .508.23.508.514v5.876a.51.51 0 0 1-.508.514.51.51 0 0 1-.508-.514v-5.876a.51.51 0 0 1 .508-.514zm1.78.491l-.254 5.877a.511.511 0 0 0 .508.536.51.51 0 0 0 .508-.491l.254-5.877a.511.511 0 0 0-.486-.535.51.51 0 0 0-.53.49zm-4.09-.49a.511.511 0 0 0-.486.535l.254 5.877a.51.51 0 0 0 .53.49.511.511 0 0 0 .486-.535l-.254-5.877a.51.51 0 0 0-.53-.49zm8.31-1.541a.51.51 0 0 1-.508.513h-.527l-.44 5.764a.51.51 0 0 1-.546.473.512.512 0 0 1-.468-.552l.434-5.685h-7.89l.613 8.029c.05.53.485.93 1.013.93h4.638c.53 0 .966-.395 1.013-.92a.51.51 0 0 1 .552-.464c.28.026.486.276.46.558a2.025 2.025 0 0 1-2.025 1.853h-4.638c-.509 0-.996-.19-1.372-.537a2.056 2.056 0 0 1-.654-1.337l-.62-8.112h-.527a.51.51 0 0 1-.508-.513.51.51 0 0 1 .508-.513h3.077v-.59c0-.85.684-1.541 1.525-1.541h1.78c.84 0 1.525.69 1.525 1.54v.59h3.077c.28 0 .508.23.508.514zm-7.398-.513h2.796v-.59a.512.512 0 0 0-.508-.514h-1.78c-.28 0-.508.23-.508.513v.59z"
-                                filter="url(#a)" transform="translate(-779 1)" />
-                        </svg>
-
-                    </div>
-                    <div class="activity-box">
-                        <div class="dots-container">
-                            <div class="dots">
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                            </div>
-                            <div class="dots">
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                            </div>
-                            <div class="dots">
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                            </div>
-                        </div>
-                        <div class="active-dot-yellow"></div>
-                        <p class="active-name">Akash.</p>
-                        <div class="tag">
-                            <p class="activity yellow">Meeting</p>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="89" height="91" viewBox="0 0 89 91"
-                            class="delete-icon">
-                            <defs>
-                                <filter id="a" width="122.3%" height="340%" x="-11.2%" y="-120%"
-                                    filterUnits="objectBoundingBox">
-                                    <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1" />
-                                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"
-                                        stdDeviation="22.5" />
-                                    <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
-                                        values="0 0 0 0 0.180392157 0 0 0 0 0.407843137 0 0 0 0 0.815686275 0 0 0 0.1 0" />
-                                    <feMerge>
-                                        <feMergeNode in="shadowMatrixOuter1" />
-                                        <feMergeNode in="SourceGraphic" />
-                                    </feMerge>
-                                </filter>
-                            </defs>
-                            <path fill="#A6A6A6" fill-rule="nonzero"
-                                d="M824 37.184c.28 0 .508.23.508.514v5.876a.51.51 0 0 1-.508.514.51.51 0 0 1-.508-.514v-5.876a.51.51 0 0 1 .508-.514zm1.78.491l-.254 5.877a.511.511 0 0 0 .508.536.51.51 0 0 0 .508-.491l.254-5.877a.511.511 0 0 0-.486-.535.51.51 0 0 0-.53.49zm-4.09-.49a.511.511 0 0 0-.486.535l.254 5.877a.51.51 0 0 0 .53.49.511.511 0 0 0 .486-.535l-.254-5.877a.51.51 0 0 0-.53-.49zm8.31-1.541a.51.51 0 0 1-.508.513h-.527l-.44 5.764a.51.51 0 0 1-.546.473.512.512 0 0 1-.468-.552l.434-5.685h-7.89l.613 8.029c.05.53.485.93 1.013.93h4.638c.53 0 .966-.395 1.013-.92a.51.51 0 0 1 .552-.464c.28.026.486.276.46.558a2.025 2.025 0 0 1-2.025 1.853h-4.638c-.509 0-.996-.19-1.372-.537a2.056 2.056 0 0 1-.654-1.337l-.62-8.112h-.527a.51.51 0 0 1-.508-.513.51.51 0 0 1 .508-.513h3.077v-.59c0-.85.684-1.541 1.525-1.541h1.78c.84 0 1.525.69 1.525 1.54v.59h3.077c.28 0 .508.23.508.514zm-7.398-.513h2.796v-.59a.512.512 0 0 0-.508-.514h-1.78c-.28 0-.508.23-.508.513v.59z"
-                                filter="url(#a)" transform="translate(-779 1)" />
-                        </svg>
-
-                    </div>
-                </div>
-                <div class="new-activity">
-                    <div class="add-icon">
-                        <p class="icon">+</p>
-                    </div>
-                    <p class="text font-md">Add new activity</p>
-                </div>
-            </div>
-            <div class="request-section">
-                <div class="chart">
-                    <div class="start-chart">
-                        <div class="active-dot"></div>
-                        <p class="request-text font-md">Request views</p>
-                        <select class="dropdown font-xs">
-                            <option value="">This week</option>
-                            <option value="">Last week</option>
-                            <option value="">Last Month</option>
-                        </select>
-                    </div>
-                    <canvas id="myChart" class="graph"></canvas>
-                </div>
-                <div class="possibility">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="223"
-                        height="266" viewBox="0 0 223 266" class="right-oval">
-                        <defs>
-                            <filter id="a" width="186.3%" height="267.8%" x="-43.1%" y="-75.6%"
-                                filterUnits="objectBoundingBox">
-                                <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1" />
-                                <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="22.5" />
-                                <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
-                                    values="0 0 0 0 0.180392157 0 0 0 0 0.407843137 0 0 0 0 0.815686275 0 0 0 0.1 0" />
-                                <feMerge>
-                                    <feMergeNode in="shadowMatrixOuter1" />
-                                    <feMergeNode in="SourceGraphic" />
-                                </feMerge>
-                            </filter>
-                            <linearGradient id="d" x1="50%" x2="50%" y1="0%" y2="100%">
-                                <stop offset="0%" stop-color="#40BCF9" />
-                                <stop offset="100%" stop-color="#1E87F0" stop-opacity="0" />
-                            </linearGradient>
-                            <circle id="c" cx="220.698" cy="348.143" r="125" />
-                            <filter id="b" width="139.2%" height="139.2%" x="-19.6%" y="-16.4%"
-                                filterUnits="objectBoundingBox">
-                                <feOffset dy="8" in="SourceAlpha" result="shadowOffsetOuter1" />
-                                <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="15" />
-                                <feColorMatrix in="shadowBlurOuter1"
-                                    values="0 0 0 0 0.117647059 0 0 0 0 0.529411765 0 0 0 0 0.941176471 0 0 0 0.2 0" />
-                            </filter>
-                        </defs>
-                        <g fill="none" fill-rule="evenodd" filter="url(#a)" opacity=".6"
-                            transform="rotate(-36 -119.061 322.177)">
-                            <use fill="#000" filter="url(#b)" xlink:href="#c" />
-                            <use fill="url(#d)" xlink:href="#c" />
-                        </g>
-                    </svg>
-                    <div class="separater">
-                        <div class="growth">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="126" height="136" viewBox="0 0 126 136"
-                                class="shape-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="89" height="91" viewBox="0 0 89 91"
+                                class="delete-icon">
                                 <defs>
-                                    <filter id="a" width="186.3%" height="267.8%" x="-43.1%" y="-75.6%"
+                                    <filter id="a" width="122.3%" height="340%" x="-11.2%" y="-120%"
                                         filterUnits="objectBoundingBox">
                                         <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1" />
                                         <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"
@@ -428,96 +265,273 @@ z" />
                                         </feMerge>
                                     </filter>
                                 </defs>
-                                <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(13 19)">
-                                    <path fill="#4D8CF4"
-                                        d="M30.094 37.487c7.091-4.258 12.903-10.07 17.436-17.436 5.666 1.674 11.307.99 16.923-2.051a5038.3 5038.3 0 0 1 5.034 2.564c-.027 4.82-5.838 21.572-17.435 50.257l-12.824-4.614c-3.897-1.4-5.849-3.555-7.504-7.322-1.417-3.224-1.96-10.357-1.63-21.398z" />
-                                    <path fill="#60D9F7"
-                                        d="M35.128 40.051c7.091-4.258 12.903-10.07 17.436-17.436 5.666 1.674 11.307.99 16.923-2.05.272 10.957-.336 18.913-1.824 23.868-2.953 9.837-9.732 18.961-15.612 26.388-6.182-1.885-13.076-4.94-15.293-8.346-1.809-2.78-2.352-10.254-1.63-22.424z" />
-                                    <path fill="#F9F9FE"
-                                        d="M38.442 42.329c5.94-4.414 10.919-9.565 14.94-15.452 4.198.94 8.524.546 12.976-1.185.258 8.402-.245 14.644-1.509 18.724-1.781 5.752-7.836 15.52-12.718 21.736-4.816-1.421-10.258-4.109-11.767-6.705-1.83-3.148-2.47-8.854-1.922-17.118z" />
-                                    <path fill="#ECF1FA"
-                                        d="M53.382 26.877c4.198.94 8.524.546 12.976-1.185.258 8.402-.245 14.644-1.509 18.724-1.781 5.752-7.836 15.52-12.718 21.736 1.525-2.793 6.113-12.258 6.667-23.024.066-7.9-3.938-14.314-5.416-16.251z" />
-                                </g>
+                                <path fill="#A6A6A6" fill-rule="nonzero"
+                                    d="M824 37.184c.28 0 .508.23.508.514v5.876a.51.51 0 0 1-.508.514.51.51 0 0 1-.508-.514v-5.876a.51.51 0 0 1 .508-.514zm1.78.491l-.254 5.877a.511.511 0 0 0 .508.536.51.51 0 0 0 .508-.491l.254-5.877a.511.511 0 0 0-.486-.535.51.51 0 0 0-.53.49zm-4.09-.49a.511.511 0 0 0-.486.535l.254 5.877a.51.51 0 0 0 .53.49.511.511 0 0 0 .486-.535l-.254-5.877a.51.51 0 0 0-.53-.49zm8.31-1.541a.51.51 0 0 1-.508.513h-.527l-.44 5.764a.51.51 0 0 1-.546.473.512.512 0 0 1-.468-.552l.434-5.685h-7.89l.613 8.029c.05.53.485.93 1.013.93h4.638c.53 0 .966-.395 1.013-.92a.51.51 0 0 1 .552-.464c.28.026.486.276.46.558a2.025 2.025 0 0 1-2.025 1.853h-4.638c-.509 0-.996-.19-1.372-.537a2.056 2.056 0 0 1-.654-1.337l-.62-8.112h-.527a.51.51 0 0 1-.508-.513.51.51 0 0 1 .508-.513h3.077v-.59c0-.85.684-1.541 1.525-1.541h1.78c.84 0 1.525.69 1.525 1.54v.59h3.077c.28 0 .508.23.508.514zm-7.398-.513h2.796v-.59a.512.512 0 0 0-.508-.514h-1.78c-.28 0-.508.23-.508.513v.59z"
+                                    filter="url(#a)" transform="translate(-779 1)" />
                             </svg>
-                            <p class="hired-text font-sm">Chance to get hired</p>
-                            <p class="percent">+47%</p>
-                            <img src="./Assets/path-2.png" alt="shape" class="shape-2">
-                        </div>
-                        <hr class="line">
-                        <div class="upgrade">
-                            <a href="javascript:void(0);" class="btn font-sm">Upgrade</a>
-                            <div class="icon-collage">
-                                <img src="https://i.postimg.cc/fTGjb95h/profile.webp" alt="first-img">
-                                <img src="https://i.postimg.cc/0yYd3Nvd/bussiness-man.webp" alt="second-img">
-                                <img src="https://i.postimg.cc/zBtyMs3k/man.webp" alt="third-img">
-                            </div>
-                            <p class="others font-xs">+22 others did!</p>
-                        </div>
 
-                    </div>
-                </div>
-                <div class="rectangle-parent">
-                    <div class="rectangle-wrapper">
-                        <div class="rectangle-card">
-                            <div class="first-line">
-                                <p class="user-text font-sm">Users who chose you</p>
+                        </div>
+                        <div class="activity-box">
+                            <div class="dots-container">
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
                                 <div class="dots">
                                     <div class="dot"></div>
                                     <div class="dot"></div>
                                     <div class="dot"></div>
                                 </div>
                             </div>
-                            <div class="second-line">
-                                <span class="number font-lg">12</span>
-                                <p class="second-line-text font-sm">This month</p>
+                            <div class="active-dot-green"></div>
+                            <p class="active-name">Meet Glenn M.</p>
+                            <div class="tag">
+                                <p class="activity green">Appointment</p>
                             </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="89" height="91" viewBox="0 0 89 91"
+                                class="delete-icon">
+                                <defs>
+                                    <filter id="a" width="122.3%" height="340%" x="-11.2%" y="-120%"
+                                        filterUnits="objectBoundingBox">
+                                        <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1" />
+                                        <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"
+                                            stdDeviation="22.5" />
+                                        <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                                            values="0 0 0 0 0.180392157 0 0 0 0 0.407843137 0 0 0 0 0.815686275 0 0 0 0.1 0" />
+                                        <feMerge>
+                                            <feMergeNode in="shadowMatrixOuter1" />
+                                            <feMergeNode in="SourceGraphic" />
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                <path fill="#A6A6A6" fill-rule="nonzero"
+                                    d="M824 37.184c.28 0 .508.23.508.514v5.876a.51.51 0 0 1-.508.514.51.51 0 0 1-.508-.514v-5.876a.51.51 0 0 1 .508-.514zm1.78.491l-.254 5.877a.511.511 0 0 0 .508.536.51.51 0 0 0 .508-.491l.254-5.877a.511.511 0 0 0-.486-.535.51.51 0 0 0-.53.49zm-4.09-.49a.511.511 0 0 0-.486.535l.254 5.877a.51.51 0 0 0 .53.49.511.511 0 0 0 .486-.535l-.254-5.877a.51.51 0 0 0-.53-.49zm8.31-1.541a.51.51 0 0 1-.508.513h-.527l-.44 5.764a.51.51 0 0 1-.546.473.512.512 0 0 1-.468-.552l.434-5.685h-7.89l.613 8.029c.05.53.485.93 1.013.93h4.638c.53 0 .966-.395 1.013-.92a.51.51 0 0 1 .552-.464c.28.026.486.276.46.558a2.025 2.025 0 0 1-2.025 1.853h-4.638c-.509 0-.996-.19-1.372-.537a2.056 2.056 0 0 1-.654-1.337l-.62-8.112h-.527a.51.51 0 0 1-.508-.513.51.51 0 0 1 .508-.513h3.077v-.59c0-.85.684-1.541 1.525-1.541h1.78c.84 0 1.525.69 1.525 1.54v.59h3.077c.28 0 .508.23.508.514zm-7.398-.513h2.796v-.59a.512.512 0 0 0-.508-.514h-1.78c-.28 0-.508.23-.508.513v.59z"
+                                    filter="url(#a)" transform="translate(-779 1)" />
+                            </svg>
+
                         </div>
-                        <div class="rectangle-card">
-                            <div class="first-line">
-                                <p class="user-text">Users who hasn’t answered</p>
+                        <div class="activity-box">
+                            <div class="dots-container">
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
                                 <div class="dots">
                                     <div class="dot"></div>
                                     <div class="dot"></div>
                                     <div class="dot"></div>
                                 </div>
                             </div>
-                            <div class="second-line">
-                                <span class="number font-lg">06</span>
-                                <p class="second-line-text">This month</p>
+                            <div class="active-dot-yellow"></div>
+                            <p class="active-name">Akash.</p>
+                            <div class="tag">
+                                <p class="activity yellow">Meeting</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="89" height="91" viewBox="0 0 89 91"
+                                class="delete-icon">
+                                <defs>
+                                    <filter id="a" width="122.3%" height="340%" x="-11.2%" y="-120%"
+                                        filterUnits="objectBoundingBox">
+                                        <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1" />
+                                        <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"
+                                            stdDeviation="22.5" />
+                                        <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                                            values="0 0 0 0 0.180392157 0 0 0 0 0.407843137 0 0 0 0 0.815686275 0 0 0 0.1 0" />
+                                        <feMerge>
+                                            <feMergeNode in="shadowMatrixOuter1" />
+                                            <feMergeNode in="SourceGraphic" />
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                <path fill="#A6A6A6" fill-rule="nonzero"
+                                    d="M824 37.184c.28 0 .508.23.508.514v5.876a.51.51 0 0 1-.508.514.51.51 0 0 1-.508-.514v-5.876a.51.51 0 0 1 .508-.514zm1.78.491l-.254 5.877a.511.511 0 0 0 .508.536.51.51 0 0 0 .508-.491l.254-5.877a.511.511 0 0 0-.486-.535.51.51 0 0 0-.53.49zm-4.09-.49a.511.511 0 0 0-.486.535l.254 5.877a.51.51 0 0 0 .53.49.511.511 0 0 0 .486-.535l-.254-5.877a.51.51 0 0 0-.53-.49zm8.31-1.541a.51.51 0 0 1-.508.513h-.527l-.44 5.764a.51.51 0 0 1-.546.473.512.512 0 0 1-.468-.552l.434-5.685h-7.89l.613 8.029c.05.53.485.93 1.013.93h4.638c.53 0 .966-.395 1.013-.92a.51.51 0 0 1 .552-.464c.28.026.486.276.46.558a2.025 2.025 0 0 1-2.025 1.853h-4.638c-.509 0-.996-.19-1.372-.537a2.056 2.056 0 0 1-.654-1.337l-.62-8.112h-.527a.51.51 0 0 1-.508-.513.51.51 0 0 1 .508-.513h3.077v-.59c0-.85.684-1.541 1.525-1.541h1.78c.84 0 1.525.69 1.525 1.54v.59h3.077c.28 0 .508.23.508.514zm-7.398-.513h2.796v-.59a.512.512 0 0 0-.508-.514h-1.78c-.28 0-.508.23-.508.513v.59z"
+                                    filter="url(#a)" transform="translate(-779 1)" />
+                            </svg>
+
+                        </div>
+                    </div>
+                    <div class="new-activity">
+                        <div class="add-icon">
+                            <p class="icon">+</p>
+                        </div>
+                        <p class="text font-md">Add new activity</p>
+                    </div>
+                </div>
+                <div class="request-section">
+                    <div class="chart">
+                        <div class="start-chart">
+                            <div class="active-dot"></div>
+                            <p class="request-text font-md">Request views</p>
+                            <select class="dropdown font-xs">
+                                <option value="">This week</option>
+                                <option value="">Last week</option>
+                                <option value="">Last Month</option>
+                            </select>
+                        </div>
+                        <canvas id="myChart" class="graph"></canvas>
+                    </div>
+                    <div class="possibility">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="223"
+                            height="266" viewBox="0 0 223 266" class="right-oval">
+                            <defs>
+                                <filter id="a" width="186.3%" height="267.8%" x="-43.1%" y="-75.6%"
+                                    filterUnits="objectBoundingBox">
+                                    <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1" />
+                                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"
+                                        stdDeviation="22.5" />
+                                    <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                                        values="0 0 0 0 0.180392157 0 0 0 0 0.407843137 0 0 0 0 0.815686275 0 0 0 0.1 0" />
+                                    <feMerge>
+                                        <feMergeNode in="shadowMatrixOuter1" />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                </filter>
+                                <linearGradient id="d" x1="50%" x2="50%" y1="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#40BCF9" />
+                                    <stop offset="100%" stop-color="#1E87F0" stop-opacity="0" />
+                                </linearGradient>
+                                <circle id="c" cx="220.698" cy="348.143" r="125" />
+                                <filter id="b" width="139.2%" height="139.2%" x="-19.6%" y="-16.4%"
+                                    filterUnits="objectBoundingBox">
+                                    <feOffset dy="8" in="SourceAlpha" result="shadowOffsetOuter1" />
+                                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"
+                                        stdDeviation="15" />
+                                    <feColorMatrix in="shadowBlurOuter1"
+                                        values="0 0 0 0 0.117647059 0 0 0 0 0.529411765 0 0 0 0 0.941176471 0 0 0 0.2 0" />
+                                </filter>
+                            </defs>
+                            <g fill="none" fill-rule="evenodd" filter="url(#a)" opacity=".6"
+                                transform="rotate(-36 -119.061 322.177)">
+                                <use fill="#000" filter="url(#b)" xlink:href="#c" />
+                                <use fill="url(#d)" xlink:href="#c" />
+                            </g>
+                        </svg>
+                        <div class="separater">
+                            <div class="growth">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="126" height="136" viewBox="0 0 126 136"
+                                    class="shape-1">
+                                    <defs>
+                                        <filter id="a" width="186.3%" height="267.8%" x="-43.1%" y="-75.6%"
+                                            filterUnits="objectBoundingBox">
+                                            <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1" />
+                                            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"
+                                                stdDeviation="22.5" />
+                                            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                                                values="0 0 0 0 0.180392157 0 0 0 0 0.407843137 0 0 0 0 0.815686275 0 0 0 0.1 0" />
+                                            <feMerge>
+                                                <feMergeNode in="shadowMatrixOuter1" />
+                                                <feMergeNode in="SourceGraphic" />
+                                            </feMerge>
+                                        </filter>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(13 19)">
+                                        <path fill="#4D8CF4"
+                                            d="M30.094 37.487c7.091-4.258 12.903-10.07 17.436-17.436 5.666 1.674 11.307.99 16.923-2.051a5038.3 5038.3 0 0 1 5.034 2.564c-.027 4.82-5.838 21.572-17.435 50.257l-12.824-4.614c-3.897-1.4-5.849-3.555-7.504-7.322-1.417-3.224-1.96-10.357-1.63-21.398z" />
+                                        <path fill="#60D9F7"
+                                            d="M35.128 40.051c7.091-4.258 12.903-10.07 17.436-17.436 5.666 1.674 11.307.99 16.923-2.05.272 10.957-.336 18.913-1.824 23.868-2.953 9.837-9.732 18.961-15.612 26.388-6.182-1.885-13.076-4.94-15.293-8.346-1.809-2.78-2.352-10.254-1.63-22.424z" />
+                                        <path fill="#F9F9FE"
+                                            d="M38.442 42.329c5.94-4.414 10.919-9.565 14.94-15.452 4.198.94 8.524.546 12.976-1.185.258 8.402-.245 14.644-1.509 18.724-1.781 5.752-7.836 15.52-12.718 21.736-4.816-1.421-10.258-4.109-11.767-6.705-1.83-3.148-2.47-8.854-1.922-17.118z" />
+                                        <path fill="#ECF1FA"
+                                            d="M53.382 26.877c4.198.94 8.524.546 12.976-1.185.258 8.402-.245 14.644-1.509 18.724-1.781 5.752-7.836 15.52-12.718 21.736 1.525-2.793 6.113-12.258 6.667-23.024.066-7.9-3.938-14.314-5.416-16.251z" />
+                                    </g>
+                                </svg>
+                                <p class="hired-text font-sm">Chance to get hired</p>
+                                <p class="percent">+47%</p>
+                                <img src="./Assets/path-2.png" alt="shape" class="shape-2">
+                            </div>
+                            <hr class="line">
+                            <div class="upgrade">
+                                <a href="javascript:void(0);" class="btn font-sm">Upgrade</a>
+                                <div class="icon-collage">
+                                    <img src="https://i.postimg.cc/fTGjb95h/profile.webp" alt="first-img">
+                                    <img src="https://i.postimg.cc/0yYd3Nvd/bussiness-man.webp" alt="second-img">
+                                    <img src="https://i.postimg.cc/zBtyMs3k/man.webp" alt="third-img">
+                                </div>
+                                <p class="others font-xs">+22 others did!</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="rectangle-parent">
+                        <div class="rectangle-wrapper">
+                            <div class="rectangle-card">
+                                <div class="first-line">
+                                    <p class="user-text font-sm">Users who chose you</p>
+                                    <div class="dots">
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                                <div class="second-line">
+                                    <span class="number font-lg">12</span>
+                                    <p class="second-line-text font-sm">This month</p>
+                                </div>
+                            </div>
+                            <div class="rectangle-card">
+                                <div class="first-line">
+                                    <p class="user-text">Users who hasn’t answered</p>
+                                    <div class="dots">
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                                <div class="second-line">
+                                    <span class="number font-lg">06</span>
+                                    <p class="second-line-text">This month</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+
+
+
                 </div>
 
-
-
-
-            </div>
-
+            </section>
         </section>
-    </section>
-    <dialog id="addActivityDialog" class="add-activities">
-        <form action="">
-            <label for="name">UserName</label>
-            <input type="text" id="name" class="name" placeholder="Enter your Name" required="true">
-            <label for="">Current Activity</label>
-            <div class="dropdown">
-                <div class="input-wrap">
-                    <input type="text" placeholder="Select activity" class="inp" required>
-                    <div class="shape-v"></div>
+        <dialog id="addActivityDialog" class="add-activities">
+            <form action="">
+                <label for="name">UserName</label>
+                <input type="text" id="name" class="name" placeholder="Enter your Name" required="true">
+                <label for="">Current Activity</label>
+                <div class="dropdown">
+                    <div class="input-wrap">
+                        <input type="text" placeholder="Select activity" class="inp" required>
+                        <div class="shape-v"></div>
+                    </div>
+                    <ul class="option">
+                        <li class="item">Call</li>
+                        <li class="item">Appointment</li>
+                        <li class="item">Meeting</li>
+                    </ul>
                 </div>
-                <ul class="option">
-                    <li class="item">Call</li>
-                    <li class="item">Appointment</li>
-                    <li class="item">Meeting</li>
-                </ul>
-            </div>
                 <button type="submit" class="submit-btn">Add</button>
                 <button class="back-btn">Back</button>
 
 
-        </form>
-    </dialog>
+            </form>
+        </dialog>
+    </div>
+    <div class="routes">
+        <div class="request">
+            <p class="request-txt"></p>
+            <a href="javascript:void(0);" class="route-back">Back</a>
+        </div>
     </div>
 </body>
 

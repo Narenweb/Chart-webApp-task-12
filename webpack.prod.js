@@ -12,6 +12,7 @@ module.exports = {
     },
     mode: 'production',
     module: {
+        
         rules: [
             {
                 test: /\.(png|jpg|webp)$/i,

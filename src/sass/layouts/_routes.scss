@@ -1,0 +1,37 @@
+.routes{
+    position: relative;
+    z-index: 3;
+    background-color: grey;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    .request{
+        position:absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+        .request-txt{
+            font-size: 45px;
+            color:red;
+            text-shadow: 2px 2px 8px $light-color;
+            display: block;
+
+        }
+        .route-back{
+            @include button;
+            position: relative;
+            left: 42px;
+            top: 30px;
+
+            &:hover{
+                background-color: greenyellow;
+                color: $dark-color;
+            }
+
+        }
+    }
+}
+
+.request:target {
+    display: block;
+  }
